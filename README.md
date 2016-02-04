@@ -3,7 +3,7 @@ Reg file and script to search for subtitles for a video file with Subliminal usi
 
 Installation
 ----------
-1. Install subliminal
+1. Install [subliminal](http://subliminal.readthedocs.org/)
 2. Download search_subtitle.reg and search_subtitle.bat to e.g. D:\Install\Subliminal
 3. Edit search_subtitle.reg line 4: edit path to search_subtitle.bat using double \ instead of single \
 4. Edit search_subtitle.bat line 20: edit path to subliminal
