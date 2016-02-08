@@ -1,4 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\*\shell\Search subtitle\command]
-@="\"D:\\Install\\Subliminal\\search_subtitle.bat\" \"%1\""
