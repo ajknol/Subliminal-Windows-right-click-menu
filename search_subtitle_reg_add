@@ -1,0 +1,33 @@
+@echo off
+cls
+setlocal ENABLEDELAYEDEXPANSION
+
+set "key="\"D:\Install\Auto_convert_video_to_mp4\search_subtitle.bat\" \"%%1\""
+
+REM mkv
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.mkv" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM avi
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.avi" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM ts
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.ts" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM mov
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.mov" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM mp4
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.mp4" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM m4v
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.m4v" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
+
+REM wmv
+for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.wmv" /ve') do set "Value=%%~b"
+REG ADD "HKEY_CLASSES_ROOT\%Value%\shell\Search subtitle\command" /d %key%
