@@ -2,7 +2,7 @@
 cls
 setlocal ENABLEDELAYEDEXPANSION
 
-set "key="\"D:\Install\search_subtitle.bat\" \"%%1\""
+set "key="\"D:\Install\Subliminal\search_subtitle.bat\" \"%%1\""
 
 REM mkv
 for /f "tokens=2*" %%a in ('REG QUERY "HKEY_CLASSES_ROOT\.mkv" /ve') do set "Value=%%~b"
